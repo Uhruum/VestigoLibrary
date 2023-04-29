@@ -5,8 +5,9 @@ package vestigo.library.services;
  * Data transfer object used for returning final count of vowels and consonants.
  */
 
-class LetterCounterReadDto {
-    private long vowelCount;
+public class LetterCounterReadDto {
+    private final long vowelCount;
+    private final long consonantCount;
 
     public LetterCounterReadDto(long vowelCount, long consonantCount) {
         this.vowelCount = vowelCount;
@@ -21,5 +22,4 @@ class LetterCounterReadDto {
         return consonantCount;
     }
 
-    private long consonantCount;
 }
